@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моё портфолио</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediascreen.css" />
+    <link rel="shortcut icon" href="img/main.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--------------------- navigation bar ----------------------------------->
+
+    <nav id="desktop-nav">
+        <div class="logo">Карьера</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Карьера</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Обо мне</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Опыт работы</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Проекты</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Контакты</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------- section profile ----------------------------------->
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./public/Avatar.png" alt="" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Привет, я</p>
+            <h1 class="title">Алексей Сатинов</h1>
+            <p class="section__text__p2">Фронтенд разработчик</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./public/ResumeCV.pdf')">
+                    Скачать CV
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./public/github.png" alt="" class="icon"
+                    onclick="location.href='https://github.com/MrKartozka'" />
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- section about me ----------------------------------->
+
+    <section id="about">
+        <p class="section__text__p1">Узнайте больше</p>
+        <h1 class="title">Обо мне</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./public/developer.png" alt="" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./public/programming.png" alt="" class="icon" />
+                        <h3>Опыт работы</h3>
+                        <p>1+ год <br />Фронтенд <br />Разработки</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./public/experience.png" alt="" class="icon" />
+                        <h3>Образование</h3>
+                        <p>Воронежский государственный<br> технический университет</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./public/design.png" alt="" class="icon" />
+                        <h3>Дизайн сайтов</h3>
+                        <p>Пробовал себя как и разработчиком<br> так и дизайнером</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Был разработчиком 1С. Выполнял обязанности по обновлению
+                        конфигурации базы данных 1С. Я отвечал за разработку
+                        мобильной конфигурации, в ходе которой ко мне был подключен
+                        веб-сервис через apache с передачей необходимой информации.
+
+                        Участвовал в проекте мобильного клиента в качестве
+                        разработчика
+
+                        <br /><br />
+                        Возобновил frontend деятельность и хочу достичь высоких результатов в этой сфере, чтобы стать
+                        востребованным сотрудником для любой компании!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./public/arrow.png" alt="" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!--------------------- section experience ----------------------------------->
+
+    <section id="experience">
+        <p class="section__text__p1">Посмотрите мои</p>
+        <h1 class="title">Навыки</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Фронтенд разработка</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Продвинутый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Продвинутый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Базовый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Продвинутый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Базовый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Средний</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Базовый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Средний</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Продвинутый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./public/checkmark.png" alt="" class="icon" />
+                            <div>
+                                <h3>SCSS</h3>
+                                <p>Базовый</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./public/arrow.png" alt="" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!--------------------- section projects ----------------------------------->
+
+    <section id="projects" class="swiper-container">
+        <p class="section__text__p1">Оцените мои последние</p>
+        <h1 class="title">Проекты</h1>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/notesapp.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Регистрация/Авторизация + firebase</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MrKartozka/TogetherProject'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://notesapp-together.vercel.app/'">Смотреть Демо</button>
+                </div>
+            </div>
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/weather.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Получение API и текущего местоположения</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/Resedare/appweather'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://resedare.github.io/appweather/'">Смотреть Демо</button>
+                </div>
+            </div>
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/simplenote.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Работа с локальным хранилищем</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MrKartozka/TestTask'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://simplenoteapp-nine.vercel.app/'">Смотреть Демо</button>
+                </div>
+            </div>
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/burgers.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Разработка сайта на Angular</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MrKartozka/burgers'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://mrkartozka.github.io/burgers/'">Смотреть Демо</button>
+                </div>
+            </div>
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/responsive.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Адаптивный сайт</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/MrKartozka/ResponsiveWebsite'">Github</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://responsive-website-azure.vercel.app/'">Смотреть Демо</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </section>
+
+    <!--------------------- section contacts ----------------------------------->
+
+    <section id="contact">
+        <p class="section__text__p1">Понравилось? Посмотрите</p>
+        <h1 class="title">Контакты</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./public/email.png" alt="" class="icon contact-icon email-icon" />
+                <p><a href="mailto:devilishkingcorp@gmail.com">devilishkingcorp@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./public/telegram.png" alt="" class="icon contact-icon" />
+                <p><a href="https://t.me/prostoDev">prostoDev</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Навыки</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Все Права Защищены.</p>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
