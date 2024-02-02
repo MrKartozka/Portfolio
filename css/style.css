@@ -33,7 +33,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("/public/back.jpg");
+    background-image: url("../public/back.jpg");
 }
 
 p {
