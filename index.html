@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="css/mediascreen.css" />
     <link rel="shortcut icon" href="public/icon.png" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
     <!--------------------- navigation bar ----------------------------------->
 
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" data-aos="fade-up">
         <div class="logo">Карьера</div>
         <div>
             <ul class="nav-links">
@@ -45,7 +47,7 @@
 
     <!--------------------- section profile ----------------------------------->
 
-    <section id="profile">
+    <section id="profile" data-aos="fade-up">
         <div class="section__pic-container">
             <img src="./public/Avatar.png" alt="" />
         </div>
@@ -67,7 +69,7 @@
 
     <!--------------------- section about me ----------------------------------->
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <p class="section__text__p1">Узнайте больше</p>
         <h1 class="title">Обо мне</h1>
         <div class="section-container">
@@ -113,94 +115,106 @@
 
     <!--------------------- section experience ----------------------------------->
 
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
         <p class="section__text__p1">Посмотрите мои</p>
         <h1 class="title">Навыки</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Фронтенд разработка</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Продвинутый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Продвинутый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Базовый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Продвинутый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Базовый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>React</h3>
-                                <p>Средний</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>Angular</h3>
-                                <p>Базовый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Средний</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Продвинутый</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./public/checkmark.png" alt="" class="icon" />
-                            <div>
-                                <h3>SCSS</h3>
-                                <p>Базовый</p>
-                            </div>
-                        </article>
-                    </div>
+            <!-- Стилистика -->
+            <div class="details-container skills-category">
+                <h2 class="experience-sub-title">Стилистика</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Продвинутый</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>SASS</h3>
+                            <p>Базовый</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>SCSS</h3>
+                            <p>Базовый</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Программирование -->
+            <div class="details-container skills-category">
+                <h2 class="experience-sub-title">Программирование</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Продвинутый</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Продвинутый</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Базовый</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>React</h3>
+                            <p>Средний</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Технологии -->
+            <div class="details-container skills-category">
+                <h2 class="experience-sub-title">Дополнительное</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>Node.js</h3>
+                            <p>Средний</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Базовый</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./public/checkmark.png" alt="" class="icon" />
+                        <div>
+                            <h3>Socket.io</h3>
+                            <p>Базовый</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
         <img src="./public/arrow.png" alt="" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
 
+
     <!--------------------- section projects ----------------------------------->
 
-    <section id="projects" class="swiper-container">
+    <section id="projects" class="swiper-container" data-aos="fade-up">
         <p class="section__text__p1">Оцените мои последние</p>
         <h1 class="title">Проекты</h1>
 
@@ -265,7 +279,7 @@
 
     <!--------------------- section contacts ----------------------------------->
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <p class="section__text__p1">Понравилось? Посмотрите</p>
         <h1 class="title">Контакты</h1>
         <div class="contact-info-upper-container">
@@ -279,7 +293,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer data-aos="fade-up">
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
