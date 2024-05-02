@@ -7,6 +7,7 @@
     <title>Моё портфолио</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediascreen.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="shortcut icon" href="public/icon.png" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
@@ -17,7 +18,7 @@
 
     <!--------------------- navigation bar ----------------------------------->
 
-    <nav id="desktop-nav" data-aos="fade-up">
+    <nav id="desktop-nav" data-aos="fade">
         <div class="logo">Карьера</div>
         <div>
             <ul class="nav-links">
@@ -47,7 +48,7 @@
 
     <!--------------------- section profile ----------------------------------->
 
-    <section id="profile" data-aos="fade-up">
+    <section id="profile" data-aos="fade">
         <div class="section__pic-container">
             <img src="./public/Avatar.png" alt="" />
         </div>
@@ -69,7 +70,7 @@
 
     <!--------------------- section about me ----------------------------------->
 
-    <section id="about" data-aos="fade-up">
+    <section id="about" data-aos="fade">
         <p class="section__text__p1">Узнайте больше</p>
         <h1 class="title">Обо мне</h1>
         <div class="section-container">
@@ -115,7 +116,7 @@
 
     <!--------------------- section experience ----------------------------------->
 
-    <section id="experience" data-aos="fade-up">
+    <section id="experience" data-aos="fade">
         <p class="section__text__p1">Посмотрите мои</p>
         <h1 class="title">Навыки</h1>
         <div class="experience-details-container">
@@ -211,62 +212,67 @@
         <img src="./public/arrow.png" alt="" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
 
-
     <!--------------------- section projects ----------------------------------->
 
-    <section id="projects" class="swiper-container" data-aos="fade-up">
+    <section id="projects" class="swiper-container" data-aos="fade">
         <p class="section__text__p1">Оцените мои последние</p>
         <h1 class="title">Проекты</h1>
 
         <div class="swiper-wrapper">
             <div class="swiper-slide project-btn-container">
                 <img src="./public/notesapp.png" alt="" class="project-img" />
-                <h2 class="experience-sub-title project-title">Регистрация/Авторизация + firebase</h2>
+                <h2 class="experience-sub-title project-title">Приложение по созданию заметок</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MrKartozka/TogetherProject'">Github</button>
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://notesapp-together.vercel.app/'">Смотреть Демо</button>
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project1')">Смотреть
+                        описание</button>
                 </div>
             </div>
             <div class="swiper-slide project-btn-container">
                 <img src="./public/weather.png" alt="" class="project-img" />
-                <h2 class="experience-sub-title project-title">Получение API и текущего местоположения</h2>
+                <h2 class="experience-sub-title project-title">Приложение по поиску прогноза погоды</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/Resedare/appweather'">Github</button>
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://resedare.github.io/appweather/'">Смотреть Демо</button>
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project2')">Смотреть
+                        описание</button>
                 </div>
             </div>
             <div class="swiper-slide project-btn-container">
                 <img src="./public/simplenote.png" alt="" class="project-img" />
-                <h2 class="experience-sub-title project-title">Работа с локальным хранилищем</h2>
+                <h2 class="experience-sub-title project-title">Тестовый вариант создания заметок</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MrKartozka/TestTask'">Github</button>
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://simplenoteapp-nine.vercel.app/'">Смотреть Демо</button>
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project3')">Смотреть
+                        описание</button>
                 </div>
             </div>
             <div class="swiper-slide project-btn-container">
                 <img src="./public/burgers.png" alt="" class="project-img" />
-                <h2 class="experience-sub-title project-title">Разработка сайта на Angular</h2>
+                <h2 class="experience-sub-title project-title">Сайт про описание различных бургеров</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MrKartozka/burgers'">Github</button>
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://mrkartozka.github.io/burgers/'">Смотреть Демо</button>
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project4')">Смотреть
+                        описание</button>
                 </div>
             </div>
             <div class="swiper-slide project-btn-container">
                 <img src="./public/responsive.png" alt="" class="project-img" />
-                <h2 class="experience-sub-title project-title">Адаптивный сайт</h2>
+                <h2 class="experience-sub-title project-title">Адаптивный, анимированный сайт</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/MrKartozka/ResponsiveWebsite'">Github</button>
-                    <button class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://responsive-website-azure.vercel.app/'">Смотреть Демо</button>
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project5')">Смотреть
+                        описание</button>
+                </div>
+            </div>
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/shopEarPods.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Магазин наушников</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project6')">Смотреть
+                        описание</button>
+                </div>
+            </div>
+            <div class="swiper-slide project-btn-container">
+                <img src="./public/beginSite.png" alt="" class="project-img" />
+                <h2 class="experience-sub-title project-title">Обычный прототип сайта</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="openModal('project7')">Смотреть
+                        описание</button>
                 </div>
             </div>
         </div>
@@ -277,9 +283,24 @@
 
     </section>
 
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="" alt="" class="modal-img" />
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <p class="modal-stack"></p>
+            <div class="modal-btn-container">
+                <button class="btn btn-color-2 modal-github-link">Github</button>
+                <button class="btn btn-color-2 modal-demo-link">Смотреть Демо</button>
+            </div>
+        </div>
+    </div>
+
     <!--------------------- section contacts ----------------------------------->
 
-    <section id="contact" data-aos="fade-up">
+    <section id="contact" data-aos="fade">
         <p class="section__text__p1">Понравилось? Посмотрите</p>
         <h1 class="title">Контакты</h1>
         <div class="contact-info-upper-container">
@@ -293,7 +314,7 @@
             </div>
         </div>
     </section>
-    <footer data-aos="fade-up">
+    <footer data-aos="fade">
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
