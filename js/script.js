@@ -107,6 +107,22 @@ const projectsData = {
     demoLink: 'https://begin-site.vercel.app/',
     img: './public/beginSite.png'
   },
+  'project8': {
+    title: 'Аналог сервиса Pinterest',
+    description: 'Описание: Реализовал сервис по созданию постов (Pinterest аналог) и их отображению. Также понял как работать со swagger и получать оттуда данные. И для регистрации/авторизации использовал JWT токены',
+    stack: 'Используемый стек технологий: CSS, React, Figma, Swagger, API',
+    githubLink: 'https://github.com/MrKartozka/GalleryART',
+    demoLink: 'http://185.174.137.251:3000/gallery',
+    img: './public/galleryArt.png'
+  },
+  'project9': {
+    title: 'Pixel perfect вёрстка',
+    description: 'Описание: Сделал простой лэндинг в стиле Pixel Perfect из Figma. Также попробовал сделать CRUD таблицу, чтобы можно было с ней взаимодействовать',
+    stack: 'Используемый стек технологий: CSS, Angular, Figma',
+    githubLink: 'https://github.com/MrKartozka/TaskAngular',
+    demoLink: 'https://task-angular-delta.vercel.app/',
+    img: './public/angularTask.png'
+  },
 };
 
 // Функция для открытия модального окна с данными проекта
