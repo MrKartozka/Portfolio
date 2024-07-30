@@ -123,6 +123,14 @@ const projectsData = {
     demoLink: 'https://task-angular-delta.vercel.app/',
     img: './public/angularTask.png'
   },
+  'project10': {
+    title: 'Заполнение документа PDF',
+    description: 'Описание: Реализована работа с библиотекой markdown, которая конвертирует файл .md в HTML/CSS шаблон документа',
+    stack: 'Используемый стек технологий: CSS, Material-UI, React, markdown',
+    githubLink: 'https://github.com/MrKartozka/web-generator',
+    demoLink: 'https://web-generator-pi.vercel.app/',
+    img: './public/webGenerator.png'
+  },
 };
 
 // Функция для открытия модального окна с данными проекта
